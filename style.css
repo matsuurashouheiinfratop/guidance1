@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+header  {
+    height: 50px;
+    background-color: #ff9a4b;
+}
+.blog {
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
+}
+.blog-item {
+    background-color: #eeeeee;
+}
+.blog-item:nth-child(2) {
+    margin: 0 30px;
+}
+.blog-order {
+    position: absolute;
+    background-color: #ff9a4b;
+    width: 50px;
+    color: white;
+    text-align: center;
+}
+.blog-contents {
+    padding: 10px;
+}
+.blog-visual {
+    height: 150px;
+    background-size: cover;
+    background-position: bottom;
+}
+.blog-item:nth-child(1) .blog-contents .blog-visual {
+    background-image: url(sample_img/chapter10_exercise/img/flow01.png);
+}
+.blog-item:nth-child(2) .blog-contents .blog-visual {
+    background-image: url(sample_img/chapter10_exercise/img/flow02.png);
+}
+.blog-item:nth-child(3) .blog-contents .blog-visual {
+    background-image: url(sample_img/chapter10_exercise/img/flow03.png);
+}
+.blog-title {
+    padding: 15px 0 5px 0;
+}
+.blog-text {
+    font-size: small;
+}
+footer {
+    height: 50px;
+    background-color: #aaaaaa;
+}
+@media screen and (max-width:768px) {
+    .header {
+        width: 100%;
+    }
+    .blog {
+        display: block;
+        width: 90%;
+    }
+    .blog-item{
+        margin: 0;
+    }
+    .blog-item:nth-child(2) {
+        margin: 20px 0;
+    }
+}
